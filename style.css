@@ -1,0 +1,93 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.container{
+    min-height: 100vh;
+    width:100vw;
+    background-color: #292a2d;
+    display: flex;
+   justify-content: space-between;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #292a2d;
+    color: #fff;
+    height: 60px;
+    padding: 0 20px;
+  }
+
+  /* Style for the logo */
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-right: 10px;
+  }
+  
+  .logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  /* Style for the text */
+  .nav-text {
+    font-size: 24px;
+  }
+#input-box{
+     border:1px solid black;
+     padding: 23px;
+}
+input,textarea{
+   width:100%;
+   background-color: transparent;
+   border:none;
+   outline:none;
+   margin-top: 6px;
+   color: white;
+}
+button{
+    background: transparent;
+    color:white;
+    padding:8px 12px;
+    border:1px solid white;
+}
+#notes{
+    padding:23px;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    
+    width: 60%
+}
+.note{
+    width:300px;
+    color:#a1a0a0;
+    margin:12px;
+    padding: 12px;
+    border: 1px solid rgb(99, 89, 89);
+    background:transparent;
+}
+
+.deleteNote{
+    float:right;
+}
+#trash{
+    width:fit-content;
+    height: fit-content;
+    color:blue;
+    margin:12px;
+    padding: 12px;
+    border: 1px solid transparent;
+    background:transparent;
+    width: 30%
+   
+}
