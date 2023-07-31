@@ -133,14 +133,14 @@ function showTrash(){
     for(let i = 0; i < trash.length; i++) {
         trashHTML += `
             <div class="note">
-                <button class="deleteTrash" id="${i}" onclick="deleteTrashedNote(${i})"><i class="fas fa-trash"></i></button> 
+                <button class="deleteTrash" id="${i}" onclick="deleteTrashedNote(${i})">DeleteTrash</button> 
                 <div class="title">${trash[i].title === '' ? 'Note' : trash[i].title}</div>
                 <div class="text">${trash[i].text}</div>
             </div>
         `;
     }
     trashDiv.innerHTML = trashHTML;
-    //fixed icons
+   
 }
 function deleteTrashedNote(ind){
     let trash =localStorage.getItem('trash'); //finding all notes 
