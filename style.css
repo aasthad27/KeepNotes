@@ -77,9 +77,9 @@ button{
     background:transparent;
 }
 
-.deleteNote{
+/* .deleteNote{
     float:right;
-}
+} */
 #trash{
     width:fit-content;
     height: fit-content;
@@ -91,6 +91,17 @@ button{
     width: 30%
    
 }
-.deleteTrash{
+/* .deleteTrash{
     float:right;
+} */
+.deleteNote,
+.deleteTrash {
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute; /*  position the delete icon absolutely */
+    top: 5px; /*  position to vertically center the icon */
+    right: 5px; /*  position the delete icon at the extreme right */
 }
