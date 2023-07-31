@@ -75,18 +75,15 @@ function showNotes(){
     {
         notes=JSON.parse(notes); // string to array
     }
-    for(let i=0;i<notes.length;i++)
-    {
-       notesHTML+=` <div class="note">
-                 <button class="deleteNote" id=${i} onclick="deleteNote(${i})">Delete</button>
-                 <button class="deleteNote" id=${i} onclick="TrashNote(${i})">TRASH</button>
-                 <div class="title">${notes[i].title===""?'Note':notes[i].title}</div>
-                 <div class="text">${notes[i].text}</div>
+    for (let i = 0; i < notes.length; i++) {
+        notesHTML += `
+            <div class="note">
+                <button class="deleteNote" id=${i} onclick="deleteNote(${i})"><i class="fas fa-trash"></i></button>
+                <button class="deleteNote" id=${i} onclick="TrashNote(${i})"><i class="fas fa-trash-restore"></i></button>
+                <div class="title">${notes[i].title === '' ? 'Note' : notes[i].title}</div>
+                <div class="text">${notes[i].text}</div>
             </div>
-              
-              `
-       
-       
+        `;
     }
     notesDiv.innerHTML =notesHTML;
 }
