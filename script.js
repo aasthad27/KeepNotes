@@ -130,14 +130,12 @@ function showTrash(){
     } else {
         trash = JSON.parse(trash); // convert string to array
     }
-    for (let i = 0; i < trash.length; i++) {
+    for(let i = 0; i < trash.length; i++) {
         trashHTML += `
             <div class="note">
-                <div class="note-content">
-                    <div class="title">${trash[i].title === '' ? 'Note' : trash[i].title}</div>
-                    <div class="text">${trash[i].text}</div>
-                </div>
                 <button class="deleteTrash" id="${i}" onclick="deleteTrashedNote(${i})"><i class="fas fa-trash"></i></button> 
+                <div class="title">${trash[i].title === '' ? 'Note' : trash[i].title}</div>
+                <div class="text">${trash[i].text}</div>
             </div>
         `;
     }
