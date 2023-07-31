@@ -133,7 +133,7 @@ function showTrash(){
     for(let i = 0; i < trash.length; i++) {
         trashHTML += `
             <div class="note">
-                <button class="deleteNote" id="${i}" onclick="deleteTrashedNote(${i})">DeleteTrash</button>
+                <button class="deleteNote" id="${i}" onclick="deleteTrashedNote(${i})"><i class="fas fa-trash"></i></button>
                 <div class="title">${trash[i].title === '' ? 'Note' : trash[i].title}</div>
                 <div class="text">${trash[i].text}</div>
             </div>
